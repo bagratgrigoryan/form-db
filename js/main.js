@@ -8,8 +8,8 @@ function ValidateEmail(email) {
 }
 
 function ValidPhone (phone){
-    if (/[^0-9]/g.test(phone)){
-        alert(true);
+    if (/^\(?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{4})$/.test(phone)){
+        alert(phone);
     }else alert(false)
 }
 btn.addEventListener('click' ,  ()=> {
